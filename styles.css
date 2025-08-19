@@ -1,0 +1,501 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #2d3748;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, rgba(26, 54, 93, 0.9), rgba(247, 147, 30, 0.8)), 
+                url('hero-image.jpg') center/cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: white;
+}
+
+.hero-overlay {
+    width: 100%;
+    padding: 80px 0;
+}
+
+.hero-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-title .highlight {
+    color: #f7931e;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    opacity: 0.95;
+}
+
+.hero-cta {
+    margin-top: 40px;
+}
+
+.hero-price {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.price-highlight {
+    color: #f7931e;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+/* Buttons */
+.btn-primary {
+    display: inline-block;
+    background: linear-gradient(135deg, #e53e3e, #c53030);
+    color: white;
+    padding: 18px 36px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(229, 62, 62, 0.3);
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(229, 62, 62, 0.4);
+}
+
+.btn-primary i {
+    margin-right: 10px;
+}
+
+.btn-secondary {
+    display: inline-block;
+    background: transparent;
+    color: #1a365d;
+    padding: 15px 30px;
+    border: 2px solid #1a365d;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: #1a365d;
+    color: white;
+}
+
+.btn-large {
+    padding: 22px 44px;
+    font-size: 22px;
+}
+
+/* Animations */
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Section Styles */
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #1a365d;
+}
+
+/* Problem Section */
+.problem-section {
+    padding: 80px 0;
+    background: #f7fafc;
+}
+
+.problems-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.problem-item {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.problem-item:hover {
+    transform: translateY(-5px);
+}
+
+.problem-icon {
+    font-size: 48px;
+    color: #e53e3e;
+    margin-bottom: 20px;
+}
+
+.problem-item h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #1a365d;
+}
+
+.problem-item p {
+    font-size: 16px;
+    color: #4a5568;
+}
+
+.problem-conclusion {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.problem-text {
+    font-size: 20px;
+    color: #2d3748;
+    line-height: 1.7;
+}
+
+/* Solution Section */
+.solution-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.solution-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.solution-description {
+    font-size: 20px;
+    margin-bottom: 25px;
+    color: #4a5568;
+    line-height: 1.7;
+}
+
+.transformation-result {
+    margin-top: 40px;
+}
+
+.result-box {
+    background: linear-gradient(135deg, #f7931e, #e68900);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(247, 147, 30, 0.3);
+}
+
+.result-number {
+    display: block;
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.result-text {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.solution-img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Benefits Section */
+.benefits-section {
+    padding: 80px 0;
+    background: #f7fafc;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.benefit-item {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.benefit-item:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-icon {
+    font-size: 32px;
+    color: #38a169;
+    flex-shrink: 0;
+    margin-top: 5px;
+}
+
+.benefit-item h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #1a365d;
+}
+
+.benefit-item p {
+    font-size: 16px;
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+/* Offer Section */
+.offer-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #1a365d, #2d3748);
+    color: white;
+}
+
+.offer-box {
+    background: white;
+    color: #2d3748;
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+.offer-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #1a365d;
+}
+
+.price-comparison {
+    margin-bottom: 30px;
+}
+
+.old-price, .new-price {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.price-label {
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.price-value {
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.crossed {
+    text-decoration: line-through;
+    color: #a0aec0;
+}
+
+.new-price .price-value.highlight {
+    color: #e53e3e;
+}
+
+.savings {
+    background: #f0fff4;
+    border: 2px solid #38a169;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.savings-text {
+    font-size: 18px;
+    font-weight: 600;
+    color: #38a169;
+}
+
+.security-text {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #4a5568;
+}
+
+.security-text i {
+    color: #38a169;
+    margin-right: 5px;
+}
+
+/* Urgency Section */
+.urgency-section {
+    padding: 60px 0;
+    background: #fed7d7;
+    text-align: center;
+}
+
+.urgency-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #c53030;
+}
+
+.urgency-text {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #2d3748;
+}
+
+/* Footer */
+.footer {
+    padding: 40px 0;
+    background: #2d3748;
+    color: white;
+    text-align: center;
+}
+
+.footer-text {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.footer-disclaimer {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Floating CTA */
+.floating-cta {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    display: none;
+}
+
+.btn-floating {
+    background: linear-gradient(135deg, #e53e3e, #c53030);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    box-shadow: 0 8px 25px rgba(229, 62, 62, 0.4);
+    animation: pulse 2s infinite;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 32px;
+    }
+    
+    .hero-subtitle {
+        font-size: 18px;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .solution-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .problems-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .offer-box {
+        padding: 30px 20px;
+        margin: 0 20px;
+    }
+    
+    .floating-cta {
+        display: block;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 24px;
+    }
+    
+    .hero-subtitle {
+        font-size: 16px;
+    }
+    
+    .btn-primary {
+        padding: 15px 25px;
+        font-size: 16px;
+    }
+    
+    .section-title {
+        font-size: 24px;
+    }
+}
+
